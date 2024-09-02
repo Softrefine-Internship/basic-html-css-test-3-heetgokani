@@ -3,7 +3,238 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Heet Test-3|Html & CSS</title>
+    <title>Heet Test-3 | Html & CSS</title>
+    <link rel="stylesheet" type="text/css" href="styles/style.css" />
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Platypi:ital,wght@0,300..800;1,300..800&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Platypi:ital,wght@0,300..800;1,300..800&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+      rel="stylesheet"
+    />
   </head>
-  <body></body>
+  <body>
+    <section class="main_section">
+      <div class="orange_circle"></div>
+      <div class="black_square"></div>
+      <div class="blue_circle"></div>
+      <div class="yellow_square"></div>
+
+      <section class="second_main_section">
+        <div class="header_background">
+          <header class="main_header_section">
+            <img class="logo_class" src="images/logo.png" alt="Logo Img" />
+            <nav class="nav_elements">
+              <button class="need_help_btn">NEED HELP</button>
+              <ion-icon
+                class="notification_icon"
+                name="notifications-outline"
+              ></ion-icon>
+              <img
+                class="main_avatar_small_img"
+                src="images/main_avatar.jpg"
+                alt="User Img"
+              />
+            </nav>
+          </header>
+          <!-- ---------------------------- 
+          User Introduction And Greetings 
+          -------------------------------- -->
+          <article class="Intro_section">
+            <div>
+              <img
+                class="main_avatar_img"
+                src="images/main_avatar.jpg"
+                alt="User Img"
+              />
+            </div>
+            <div class="Greetings">
+              <p class="goodmorning_text">Hi, Emma good morning 👋🏻</p>
+              <p class="avatar_asking_details">
+                Email-<span class="avatar_details">Emma@gmail.com</span>
+              </p>
+              <p class="avatar_asking_details">
+                Phone-<span class="avatar_details">+91-819755122</span>
+              </p>
+              <p class="avatar_asking_details">
+                Address-<span class="avatar_details"
+                  >London Garden Street,NYC(USA)</span
+                >
+              </p>
+              <p class="avatar_asking_details">
+                Plan-<span class="avatar_details">100$</span>
+              </p>
+              <p class="avatar_asking_details">
+                Joined-<span class="avatar_details">Mon 22nd Feb 2013</span>
+              </p>
+            </div>
+            <div class="percentage_section">
+              <div>
+                <img
+                  class="percentage_img"
+                  src="images/perc.png"
+                  alt="percentage image"
+                />
+              </div>
+              <div class="Completetion_Section">
+                <p class="profile_completetion_txt">Profile Completion</p>
+                <p class="complete_profile_request">Please Complete Profile</p>
+                <button class="complete_button">COMPLETE</button>
+              </div>
+            </div>
+          </article>
+        </div>
+        <section class="user_record">
+          <div class="record_list">
+            <div class="navigation_section"></div>
+            <div>
+              <h1 class="main_menu_heading">
+                <span><ion-icon class="home_icon" name="home"></ion-icon></span
+                >DASHBOARD
+              </h1>
+              <div class="border"></div>
+            </div>
+            <h1 class="menu_heading">NEW CLAIMS</h1>
+            <h1 class="menu_heading">COMPLETED CLAIMS</h1>
+            <h1 class="menu_heading">PAST CLAIMS</h1>
+            <h1 class="menu_heading">MEMBERS</h1>
+            <h1 class="menu_heading">MY CLAIMS</h1>
+            <div>
+              <button class="claim_btn">
+                <span
+                  ><ion-icon
+                    class="claim_icon"
+                    name="color-filter-outline"
+                  ></ion-icon></span
+                >CLAIMS
+              </button>
+            </div>
+          </div>
+          <div class="about_us">
+            <p class="about_my_family">
+              ABOUT MY FAMILY<span
+                ><ion-icon
+                  class="three_dot_icon"
+                  name="ellipsis-horizontal-outline"
+                ></ion-icon
+              ></span>
+            </p>
+            <p class="line_before_faces">COVERED PERSONS</p>
+
+            <!-- ---------------------------- 
+                        Face Row 1
+          -------------------------------- -->
+            <div class="faces_row">
+              <div>
+                <img
+                  class="user_face"
+                  src="images/Faces/many_faces_1.jpg"
+                  alt="user1"
+                />
+              </div>
+              <div>
+                <img
+                  class="user_face"
+                  src="images/Faces/many_faces_2.jpg"
+                  alt="user2"
+                />
+              </div>
+            </div>
+            <p class="line_before_faces">BENEFICIARY PERSONS</p>
+            <!-- ---------------------------- 
+                         Face Row 2
+          -------------------------------- -->
+
+            <div class="faces_row">
+              <div>
+                <img
+                  class="user_face"
+                  src="images/Faces/many_faces_3.jpg"
+                  alt="user3"
+                />
+              </div>
+              <div>
+                <img
+                  class="user_face"
+                  src="images/Faces/many_faces_4.jpg"
+                  alt="user4"
+                />
+              </div>
+              <div>
+                <img
+                  class="user_face"
+                  src="images/Faces/many_faces_5.jpg"
+                  alt="user5"
+                />
+              </div>
+            </div>
+            <p class="line_before_faces">EMERGENCY PERSONS</p>
+            <!-- ---------------------------- 
+                         Face Row 3
+          -------------------------------- -->
+
+            <div class="faces_row">
+              <div>
+                <img
+                  class="user_face"
+                  src="images/Faces/many_faces_6.jpg"
+                  alt="user6"
+                />
+              </div>
+              <div>
+                <img
+                  class="user_face"
+                  src="images/Faces/many_faces_7.jpg"
+                  alt="user7"
+                />
+              </div>
+              <div>
+                <img
+                  class="user_face"
+                  src="images/Faces/many_faces_8.jpg"
+                  alt="user8"
+                />
+              </div>
+              <div>
+                <img
+                  class="user_face"
+                  src="images/Faces/many_faces_9.jpg"
+                  alt="user9"
+                />
+              </div>
+            </div>
+            <p class="about_me_section">
+              ABOUT ME<span
+                ><ion-icon
+                  class="three_dot_icon_2nd"
+                  name="ellipsis-horizontal-outline"
+                ></ion-icon
+              ></span>
+            </p>
+            <p class="user_details_about_me_section first">EMAIL</p>
+            <p class="user_answer_about_me_section">heet@gmail.com</p>
+            <p class="user_details_about_me_section">PHONE</p>
+            <p class="user_answer_about_me_section">+91-8864862179</p>
+            <p class="user_details_about_me_section">ADDRESS</p>
+            <p class="user_answer_about_me_section">Garden Street London</p>
+            <p class="user_details_about_me_section">PLAN</p>
+            <p class="user_answer_about_me_section">$100</p>
+            <p class="user_details_about_me_section">JOINED</p>
+            <p class="user_answer_about_me_section">Mon 22nd Feb 2019</p>
+          </div>
+        </section>
+      </section>
+    </section>
+  </body>
 </html>

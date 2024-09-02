@@ -1,0 +1,272 @@
+* {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  box-sizing: border-box;
+}
+.orange_circle {
+  position: absolute;
+  z-index: -1;
+  width: 50rem;
+  background-color: #fff;
+  top: -5%;
+  left: -10%;
+  border: 7rem solid #fca424;
+  height: 45rem;
+  border-radius: 50%;
+}
+.black_square {
+  position: absolute;
+  z-index: -1;
+  background-color: #fff;
+  transform: rotate(45deg);
+  border: 2rem solid #817b7b;
+  top: 50%;
+  left: 80%;
+  height: 30rem;
+  width: 26rem;
+}
+.blue_circle {
+  position: absolute;
+  z-index: -1;
+  background-color: #fff;
+  border: 1rem solid #0dd1eb;
+  top: 0%;
+  left: 60%;
+  height: 5rem;
+  width: 5rem;
+  border-radius: 50%;
+}
+.yellow_square {
+  position: absolute;
+  z-index: 999;
+  background-color: #fff;
+  border: 2rem solid #dde025;
+  top: 10%;
+  left: 90%;
+  height: 1rem;
+  width: 1rem;
+  transform: rotate(199deg);
+}
+html {
+  font-size: 62.5%;
+  /* 1 Rem = 16px */
+}
+.main_section {
+  width: 1200px;
+  height: 200rem;
+}
+.main_header_section {
+  margin: 4rem 0 4rem 10rem;
+  display: flex;
+
+  justify-content: space-between;
+}
+.Intro_section {
+  display: flex;
+  margin: 0 0 0 1rem;
+}
+.main_avatar_img {
+  height: 18rem;
+  width: 16rem;
+  margin: 0 2rem 0 2rem;
+  position: absolute;
+}
+.logo_class {
+  width: 7rem;
+  height: 3rem;
+  margin: 1rem 0 2rem 1rem;
+}
+.main_avatar_small_img {
+  height: 2.5rem;
+  width: 2.5rem;
+  margin: 0 2rem 0 0;
+}
+.notification_icon {
+  height: 2rem;
+  width: 2rem;
+}
+.nav_elements {
+  display: flex;
+  gap: 2rem;
+  margin: 1rem 0 0 0;
+}
+.need_help_btn {
+  background: rgba(80, 75, 75, 0.144);
+  font-family: sans-serif;
+  border-radius: 0.3rem;
+  padding: 0.2rem 1.5rem;
+  color: black;
+  border: none;
+  height: 3rem;
+  color: white;
+  font-size: 1rem;
+  margin: 0 0 0 0;
+}
+.need_help_btn:hover {
+  background-color: #0dd1eb;
+  color: white;
+  cursor: pointer;
+}
+.second_main_section {
+  width: 80vw;
+  height: 130rem;
+  margin: 5rem;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px,
+    rgba(0, 0, 0, 0.22) 0px 10px 10px;
+}
+.header_background {
+  background-image: url(/images/bg.jpg);
+  background-size: cover;
+}
+.goodmorning_text {
+  font-size: 2rem;
+  color: #fff;
+  font-family: "Rubik";
+}
+.avatar_asking_details {
+  font-size: 1rem;
+  color: #726f6ff6;
+  line-height: 2rem;
+}
+.avatar_details {
+  color: white;
+}
+.Greetings {
+  margin: 0 0 0 20rem;
+}
+.percentage_section {
+  display: flex;
+  background-color: rgba(88, 86, 86, 0.418);
+  margin: 0 0 5rem 35rem;
+}
+.percentage_img {
+  width: 10rem;
+  height: 10rem;
+}
+.Completetion_Section {
+  line-height: 1.5rem;
+  padding: 1rem 1.5rem;
+}
+.profile_completetion_txt {
+  color: #fff;
+  font-size: 1.3rem;
+}
+.complete_profile_request {
+  color: #cdcdcd;
+  font-size: 1rem;
+}
+.complete_button {
+  background-color: #fca424;
+  border: none;
+  margin: 1rem 0 0 0;
+  padding: 1rem;
+  color: white;
+}
+.complete_button:hover {
+  background-color: rgba(0, 255, 255, 0.603);
+  color: #fff;
+  cursor: pointer;
+}
+.user_record {
+  background-color: white;
+  height: 100rem;
+  display: grid;
+  width: 100%;
+  grid-template-rows: 8rem 1fr;
+  grid-template-columns: 30rem 1fr;
+}
+.record_list {
+  display: flex;
+  padding: 1rem 1.5rem;
+  background-color: white;
+  grid-column: 2/-1;
+  justify-content: space-between;
+  align-items: center;
+}
+.about_us {
+  grid-row: 1/-1;
+  grid-column: 1/2;
+  background-color: #fffffe;
+}
+.view {
+  background-color: rgba(216, 33, 33, 0.24);
+  grid-column: 2/3;
+  grid-row: 2/3;
+  border-top: 2px solid #64636177;
+}
+.navigation_section {
+  display: flex;
+  gap: 1rem;
+  font-size: 1.2rem;
+}
+.menu_heading {
+  font-size: 1.1rem;
+  color: #757474c4;
+  font-family: "Rubik", sans-serif;
+}
+.claim_btn {
+  background-color: #0dd39d;
+  color: white;
+  border: none;
+  padding: 0.8rem;
+  margin: 0 0 0 2rem;
+  font-size: 1.1rem;
+  font-family: "Rubik";
+}
+.main_menu_heading {
+  border-bottom: 2px solid #fca424;
+  padding: 2rem;
+  font-size: 1.1rem;
+  font-family: "Rubik";
+}
+.home_icon {
+  margin: 0.5rem 1rem 0 0;
+}
+.about_my_family,
+.about_me_section {
+  margin: 4rem 2rem 0 2rem;
+  font-size: 1.5rem;
+  font-family: "Rubik";
+  border-bottom: 2px solid #757474c4;
+  padding: 0 0 1rem 0;
+}
+
+.three_dot_icon {
+  margin: 0 0 0 9rem;
+}
+.three_dot_icon_2nd {
+  margin: 0 0 0 15rem;
+}
+.line_before_faces {
+  margin: 3rem 0 0 2rem;
+  font-size: 1.3rem;
+  color: #888686;
+  font-family: "Rubik";
+}
+.user_face {
+  width: 4rem;
+  height: 4rem;
+  border-radius: 25rem;
+}
+.faces_row {
+  display: flex;
+  gap: 2rem;
+  margin: 2rem 0 0 3rem;
+}
+.user_details_about_me_section {
+  margin: 1rem 0 0 2rem;
+  font-size: 1.3rem;
+  color: #888686;
+  font-family: "Rubik";
+}
+.user_answer_about_me_section {
+  margin: 0.5rem 0 0 2rem;
+  font-size: 1rem;
+  color: #050505;
+  font-family: "Rubik";
+}
+.first {
+  margin: 2.5rem 0 0 2rem;
+  /* Used Class Hierarchy Concept( of class user_details_about_me_section first )*/
+}
