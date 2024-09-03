@@ -110,7 +110,7 @@ html {
 }
 .second_main_section {
   width: 80vw;
-  height: 130rem;
+  height: 107rem;
   margin: 5rem;
   box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px,
     rgba(0, 0, 0, 0.22) 0px 10px 10px;
@@ -170,7 +170,7 @@ html {
 }
 .user_record {
   background-color: white;
-  height: 100rem;
+  height: 77rem;
   display: grid;
   width: 100%;
   grid-template-rows: 8rem 1fr;
@@ -190,10 +190,13 @@ html {
   background-color: #fffffe;
 }
 .view {
-  background-color: rgba(216, 33, 33, 0.24);
+  background-color: rgba(206, 205, 205, 0.288);
   grid-column: 2/3;
   grid-row: 2/3;
   border-top: 2px solid #64636177;
+}
+.cards_section {
+  display: flex;
 }
 .navigation_section {
   display: flex;
@@ -213,6 +216,11 @@ html {
   margin: 0 0 0 2rem;
   font-size: 1.1rem;
   font-family: "Rubik";
+}
+.claim_btn:hover {
+  background-color: #fca424;
+  color: #fff;
+  cursor: pointer;
 }
 .main_menu_heading {
   border-bottom: 2px solid #fca424;
@@ -257,16 +265,207 @@ html {
 .user_details_about_me_section {
   margin: 1rem 0 0 2rem;
   font-size: 1.3rem;
+  line-height: 1.5rem;
   color: #888686;
   font-family: "Rubik";
 }
 .user_answer_about_me_section {
   margin: 0.5rem 0 0 2rem;
-  font-size: 1rem;
+  font-size: 1.3rem;
+  line-height: 1.5rem;
   color: #050505;
   font-family: "Rubik";
 }
 .first {
   margin: 2.5rem 0 0 2rem;
   /* Used Class Hierarchy Concept( of class user_details_about_me_section first )*/
+}
+.card {
+  display: flex;
+  width: 26rem;
+  margin: 3rem 1rem 0 2rem;
+  background-color: #fff;
+  height: 10rem;
+}
+.many_faces {
+  height: 3rem;
+  margin-right: -1rem;
+  border-radius: 50%;
+  width: 3rem;
+  border: 2px solid white;
+}
+.many_faces:last-child {
+  margin: 0;
+}
+.big_numbers {
+  font-size: 6rem;
+  font-family: "Rubik";
+  margin: 1rem 3rem 0 2rem;
+  border-right: 2px solid #a3a0a0;
+  padding-right: 1rem;
+}
+.image_section {
+  display: flex;
+  margin: 1.5rem 0 0 0;
+}
+.card_headings {
+  font-size: 1.5rem;
+  color: #a3a0a0;
+  font-family: "Rubik";
+  margin: 2rem 0 0 0;
+}
+.card_name_and_image {
+  margin-left: -1.5rem;
+}
+.avatar_section {
+  display: grid;
+  height: 53rem;
+  margin: 1rem;
+  grid-template-columns: 70% 1fr;
+}
+
+.avatar_info_wrapper {
+  margin: 0 0 0 2rem;
+}
+
+.avatar_full_name {
+  font-size: 1.7rem;
+  margin: 0 0 1.5rem 0;
+  font-weight: 500;
+  font-family: "Rubik";
+  color: rgb(0, 0, 0);
+
+  font-style: normal;
+}
+.avatar_layout {
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+  background-color: white;
+  margin: 1rem;
+}
+.avatar_detail_row {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin: 1rem 1rem 1rem 0;
+}
+
+.icon_card,
+.icon_calendar,
+.icon_location,
+.icon_wallet {
+  width: 2rem;
+  height: 2rem;
+  color: #837d75b6;
+}
+.icon_wallet {
+  color: white;
+}
+
+.avatar_image {
+  width: 14rem;
+  height: 14rem;
+  border-radius: 0.5rem;
+}
+
+.avatar_detail_title {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.2rem;
+  color: black;
+}
+
+.payment_button {
+  background-color: #fca424;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  margin: 0 0 0 5rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.payment_button:hover {
+  background-color: #0dd1eb;
+  color: white;
+  cursor: pointer;
+}
+.accent_border {
+  border-right: 3px solid #fca424;
+  position: absolute;
+  height: 2.3rem;
+  width: 1rem;
+  z-index: 9999;
+  top: 115%;
+  left: 83%;
+}
+.avatar_detail_date,
+.avatar_detail_address {
+  color: #837d75;
+  font-weight: 400;
+}
+.activity {
+  background-color: #0dd1eb;
+}
+.service_section {
+  margin: 1.1rem 0 0 1rem;
+  background-color: white;
+}
+.service_header {
+  font-family: sans-serif;
+  font-size: 1.2rem;
+  color: #444040c9;
+  margin: 0 2.5rem 0 1rem;
+  padding: 0 0 1rem 0;
+  border-bottom: 1px solid #837d75b6;
+}
+.highlight_dot {
+  width: 10px;
+  height: 10px;
+  background-color: rgba(0, 25, 245, 0.986);
+  border-radius: 50%;
+
+  display: inline-block;
+  margin: 0 1rem 0 0;
+}
+
+.dot_container {
+  align-items: center;
+  display: flex;
+}
+.service_description {
+  font-size: 1.2rem;
+  font-family: sans-serif;
+  color: #837d75cb;
+  margin: 0.8rem 2.5rem 0rem 2rem;
+}
+.service_item {
+  margin: 2rem 0 0 2rem;
+}
+.service_title {
+  font-size: 1.3rem;
+  color: black;
+  font-family: sans-serif;
+}
+
+.success_dot {
+  background-color: #23a829;
+}
+.sub_description {
+  color: rgba(128, 114, 114, 0.445);
+}
+
+.accent_dot {
+  background-color: #fca424;
+}
+
+.cta_button {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.cta_button:hover {
+  color: white;
+  background-color: #13bafc;
+  cursor: pointer;
 }
