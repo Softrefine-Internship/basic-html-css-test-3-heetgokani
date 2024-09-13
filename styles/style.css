@@ -15,6 +15,7 @@
   height: 45rem;
   border-radius: 50%;
 }
+
 .black_square {
   position: absolute;
   z-index: -1;
@@ -37,27 +38,16 @@
   width: 5rem;
   border-radius: 50%;
 }
-.yellow_square {
-  position: absolute;
-  z-index: 999;
-  background-color: #fff;
-  border: 2rem solid #dde025;
-  top: 10%;
-  left: 90%;
-  height: 1rem;
-  width: 1rem;
-  transform: rotate(199deg);
-}
+
 html {
   font-size: 62.5%;
   /* 1 Rem = 16px */
 }
 .main_section {
-  width: 1200px;
   height: 200rem;
 }
 .main_header_section {
-  margin: 4rem 0 4rem 10rem;
+  margin: 4rem 0 4rem 0;
   display: flex;
 
   justify-content: space-between;
@@ -69,22 +59,51 @@ html {
 .main_avatar_img {
   height: 18rem;
   width: 16rem;
-  margin: 0 2rem 0 2rem;
+  margin: 2rem 0 0 0rem;
   position: absolute;
+  transition: all 0.2s ease-in;
+  border-radius: 5%;
+}
+.main_avatar_img:hover {
+  transform: translateY(-6px);
+  cursor: pointer;
+}
+
+.camera_icon:hover {
+  transform: translateX(4px);
+  cursor: pointer;
+}
+.camera_icon_section {
+  flex-direction: column;
 }
 .logo_class {
-  width: 7rem;
-  height: 3rem;
-  margin: 1rem 0 2rem 1rem;
+  width: 10rem;
+  transition: all 0.2s ease-in;
+  height: 4rem;
+  margin-left: 3rem;
+}
+.logo_class:hover {
+  transform: translateY(-4px);
+  cursor: pointer;
 }
 .main_avatar_small_img {
   height: 2.5rem;
   width: 2.5rem;
   margin: 0 2rem 0 0;
+  transition: all 0.2s ease-in;
+}
+.main_avatar_small_img:hover {
+  transform: translateX(4px);
+  cursor: pointer;
 }
 .notification_icon {
   height: 2rem;
   width: 2rem;
+  transition: all 0.2s ease-in;
+}
+.notification_icon:hover {
+  transform: translateX(2px);
+  cursor: pointer;
 }
 .nav_elements {
   display: flex;
@@ -109,14 +128,18 @@ html {
   cursor: pointer;
 }
 .second_main_section {
-  width: 80vw;
+  width: 1200px;
   height: 107rem;
   margin: 5rem;
   box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px,
     rgba(0, 0, 0, 0.22) 0px 10px 10px;
 }
 .header_background {
-  background-image: url(/images/bg.jpg);
+  background-image: linear-gradient(
+      rgba(31, 27, 27, 0.726),
+      rgba(0, 0, 0, 0.432)
+    ),
+    url(/images/bg.jpg);
   background-size: cover;
 }
 .goodmorning_text {
@@ -124,6 +147,17 @@ html {
   color: #fff;
   font-family: "Rubik";
 }
+.yellow_dot {
+  position: absolute;
+  top: 10.2rem;
+  left: 117.7rem;
+  width: 6px;
+  height: 6px;
+  background-color: #fca424;
+  border-radius: 50%;
+  border: 2px solid #fca424;
+}
+
 .avatar_asking_details {
   font-size: 1rem;
   color: #726f6ff6;
@@ -132,13 +166,56 @@ html {
 .avatar_details {
   color: white;
 }
+.camera_icon {
+  height: 2.4rem;
+  width: 3rem;
+  background-color: rgba(88, 86, 86, 0.418);
+  margin: 0 0 1rem 65rem;
+  color: white;
+  transition: all 0.2s ease-in;
+}
 .Greetings {
   margin: 0 0 0 20rem;
 }
+.camera_icon_section {
+  flex-direction: column;
+}
+.percentage_and_camera {
+  display: flex;
+  flex-direction: column;
+}
+.progress {
+  position: absolute;
+  background-color: #fca424;
+  height: 7rem;
+  background-color: transparent;
+  width: 7rem;
+  border-radius: 50%;
+  top: 18.29rem;
+  transform: rotate(45deg);
+  left: 96.5rem;
+  border: 0.4rem solid #fca424;
+  border-top-color: rgb(167, 151, 151);
+}
+.percentage_digit {
+  font-size: 1.5rem;
+  color: white;
+  font-family: sans-serif;
+  margin: 1.3rem 1rem 1rem 1.2rem;
+  background-color: rgba(127, 131, 134, 0.815);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 5rem;
+  height: 5rem;
+  border-radius: 50%;
+}
+
 .percentage_section {
   display: flex;
   background-color: rgba(88, 86, 86, 0.418);
-  margin: 0 0 5rem 35rem;
+  margin: 0 2rem 2rem 44rem;
+  padding: 1rem 1rem;
 }
 .percentage_img {
   width: 10rem;
@@ -150,11 +227,12 @@ html {
 }
 .profile_completetion_txt {
   color: #fff;
-  font-size: 1.3rem;
+  font-size: 1.5rem;
 }
 .complete_profile_request {
   color: #cdcdcd;
-  font-size: 1rem;
+  font-size: 1.2rem;
+  margin: 0.5rem 0 0 0;
 }
 .complete_button {
   background-color: #fca424;
@@ -179,7 +257,7 @@ html {
 .record_list {
   display: flex;
   padding: 1rem 1.5rem;
-  background-color: white;
+  background-color: rgba(216, 214, 214, 0.233);
   grid-column: 2/-1;
   justify-content: space-between;
   align-items: center;
@@ -190,10 +268,9 @@ html {
   background-color: #fffffe;
 }
 .view {
-  background-color: rgba(206, 205, 205, 0.288);
+  background-color: rgba(216, 214, 214, 0.233);
   grid-column: 2/3;
   grid-row: 2/3;
-  border-top: 2px solid #64636177;
 }
 .cards_section {
   display: flex;
@@ -205,8 +282,18 @@ html {
 }
 .menu_heading {
   font-size: 1.1rem;
-  color: #757474c4;
   font-family: "Rubik", sans-serif;
+  border: none;
+  color: #cdcdcd;
+  transition: all 0.2s ease-in;
+}
+.menu_heading:hover {
+  border-bottom: 2px solid #fca424;
+  cursor: pointer;
+  padding: 2.1rem 0;
+  font-size: 1.1rem;
+  font-family: "Rubik";
+  cursor: pointer;
 }
 .claim_btn {
   background-color: #0dd39d;
@@ -217,10 +304,17 @@ html {
   font-size: 1.1rem;
   font-family: "Rubik";
 }
+.claim_icon {
+  width: 2rem;
+  height: 1.2rem;
+}
 .claim_btn:hover {
   background-color: #fca424;
   color: #fff;
   cursor: pointer;
+}
+.claim_btn_flex {
+  display: flex;
 }
 .main_menu_heading {
   border-bottom: 2px solid #fca424;
@@ -249,13 +343,22 @@ html {
 .line_before_faces {
   margin: 3rem 0 0 2rem;
   font-size: 1.3rem;
-  color: #888686;
+  color: #cdcdcd;
+  font-weight: 500;
   font-family: "Rubik";
 }
 .user_face {
   width: 4rem;
   height: 4rem;
   border-radius: 25rem;
+}
+.border_yellow {
+  border: none;
+  position: absolute;
+  height: 1px;
+  width: 88.7rem;
+  background-color: #88847b49;
+  margin: 5.8rem 0 0 -1.4rem;
 }
 .faces_row {
   display: flex;
@@ -280,12 +383,26 @@ html {
   margin: 2.5rem 0 0 2rem;
   /* Used Class Hierarchy Concept( of class user_details_about_me_section first )*/
 }
+.gray_vertical_line {
+  height: 46rem;
+  position: absolute;
+  width: 0.5px;
+  margin: 2.5rem 0 0 2.4rem;
+  color: #837d7594;
+}
+
 .card {
   display: flex;
   width: 26rem;
-  margin: 3rem 1rem 0 2rem;
+  margin: 3rem 1rem 0 3.5rem;
   background-color: #fff;
   height: 10rem;
+  transition: all 0.2s ease-in;
+}
+.card:hover {
+  box-shadow: 0 0 8px black;
+  transform: translateY(-4px);
+  cursor: pointer;
 }
 .many_faces {
   height: 3rem;
@@ -299,7 +416,7 @@ html {
 }
 .big_numbers {
   font-size: 6rem;
-  font-family: "Rubik";
+  font-family: "dosis";
   margin: 1rem 3rem 0 2rem;
   border-right: 2px solid #a3a0a0;
   padding-right: 1rem;
@@ -310,9 +427,10 @@ html {
 }
 .card_headings {
   font-size: 1.5rem;
-  color: #a3a0a0;
+  color: #cdcdcd;
   font-family: "Rubik";
   margin: 2rem 0 0 0;
+  font-weight: 400;
 }
 .card_name_and_image {
   margin-left: -1.5rem;
@@ -327,7 +445,14 @@ html {
 .avatar_info_wrapper {
   margin: 0 0 0 2rem;
 }
-
+.yellow_border {
+  border: none;
+  position: absolute;
+  height: 1px;
+  width: 88.7rem;
+  background-color: #88847b49;
+  margin: 5.8rem 0 0 -1.4rem;
+}
 .avatar_full_name {
   font-size: 1.7rem;
   margin: 0 0 1.5rem 0;
@@ -343,7 +468,16 @@ html {
   padding: 1rem;
   background-color: white;
   margin: 1rem;
+  transition: all 0.2s ease-in;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
+    rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
 }
+.avatar_layout:hover {
+  transform: translateX(-8px);
+  cursor: pointer;
+  box-shadow: 0 0 8px black;
+}
+
 .avatar_detail_row {
   display: flex;
   align-items: center;
@@ -380,7 +514,7 @@ html {
   color: white;
   border: none;
   padding: 0.5rem 1rem;
-  margin: 0 0 0 5rem;
+  margin: 0 0 0 15rem;
   display: flex;
   align-items: center;
   gap: 1rem;
@@ -419,12 +553,20 @@ html {
   padding: 0 0 1rem 0;
   border-bottom: 1px solid #837d75b6;
 }
+.last_image_txt {
+  color: white;
+  font-size: 1.5rem;
+  margin-top: 0.75rem;
+  font-weight: bolder;
+  font-family: "sans-serif";
+  margin-left: -1.8rem;
+}
 .highlight_dot {
   width: 10px;
   height: 10px;
   background-color: rgba(0, 25, 245, 0.986);
   border-radius: 50%;
-
+  z-index: 9999;
   display: inline-block;
   margin: 0 1rem 0 0;
 }

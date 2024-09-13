@@ -9,6 +9,12 @@
       type="module"
       src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
     ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&display=swap"
+      rel="stylesheet"
+    />
     <script
       nomodule
       src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
@@ -29,7 +35,6 @@
       <div class="orange_circle"></div>
       <div class="black_square"></div>
       <div class="blue_circle"></div>
-      <div class="yellow_square"></div>
 
       <section class="second_main_section">
         <div class="header_background">
@@ -41,6 +46,8 @@
                 class="notification_icon"
                 name="notifications-outline"
               ></ion-icon>
+              <div class="yellow_dot"></div>
+
               <img
                 class="main_avatar_small_img"
                 src="images/main_avatar.jpg"
@@ -79,20 +86,24 @@
                 Joined-<span class="avatar_details">Mon 22nd Feb 2013</span>
               </p>
             </div>
-            <div class="percentage_section">
-              <div>
-                <img
-                  class="percentage_img"
-                  src="images/perc.png"
-                  alt="percentage image"
-                />
+            <section class="percentage_and_camera">
+              <div class="percentage_section">
+                <div>
+                  <div class="progress"></div>
+                  <h1 class="percentage_digit">75%</h1>
+                </div>
+                <div class="Completetion_Section">
+                  <p class="profile_completetion_txt">Profile Completion</p>
+                  <p class="complete_profile_request">
+                    Please Complete Profile
+                  </p>
+                  <button class="complete_button">COMPLETE</button>
+                </div>
               </div>
-              <div class="Completetion_Section">
-                <p class="profile_completetion_txt">Profile Completion</p>
-                <p class="complete_profile_request">Please Complete Profile</p>
-                <button class="complete_button">COMPLETE</button>
+              <div class="camera_icon_section">
+                <ion-icon class="camera_icon" name="camera-outline"> </ion-icon>
               </div>
-            </div>
+            </section>
           </article>
         </div>
         <section class="user_record">
@@ -106,11 +117,13 @@
               <div class="border"></div>
             </div>
             <h1 class="menu_heading">NEW CLAIMS</h1>
+            <hr class="border_yellow" />
             <h1 class="menu_heading">COMPLETED CLAIMS</h1>
             <h1 class="menu_heading">PAST CLAIMS</h1>
             <h1 class="menu_heading">MEMBERS</h1>
             <h1 class="menu_heading">MY CLAIMS</h1>
-            <div>
+
+            <div class="claim_btn_flex">
               <button class="claim_btn">
                 <span
                   ><ion-icon
@@ -265,6 +278,7 @@
                       src="images/Faces/last.jpg"
                       alt="faces"
                     />
+                    <span class="last_image_txt">+32</span>
                   </div>
                 </div>
               </div>
@@ -298,6 +312,7 @@
                       src="images/Faces/last.jpg"
                       alt="faces"
                     />
+                    <span class="last_image_txt">+32</span>
                   </div>
                 </div>
               </div>
@@ -307,7 +322,7 @@
 
               <div class="card">
                 <div>
-                  <p class="big_numbers">94</p>
+                  <p class="big_numbers">102</p>
                 </div>
                 <div class="card_name_and_image">
                   <p class="card_headings">TOTAL CLAIMS</p>
@@ -332,6 +347,7 @@
                       src="images/Faces/last.jpg"
                       alt="faces"
                     />
+                    <span class="last_image_txt">+32</span>
                   </div>
                 </div>
               </div>
@@ -380,9 +396,7 @@
                       ></ion-icon>
                       <h1 class="avatar_detail_title">
                         Address -
-                        <span class="avatar_detail_address"
-                          >Glass Walk, NYC</span
-                        >
+                        <span class="avatar_detail_address">Glass NYC</span>
                       </h1>
                       <button class="payment_button">
                         <ion-icon
@@ -436,9 +450,7 @@
                       ></ion-icon>
                       <h1 class="avatar_detail_title">
                         Address -
-                        <span class="avatar_detail_address"
-                          >Glass Walk, NYC</span
-                        >
+                        <span class="avatar_detail_address">Glass NYC</span>
                       </h1>
                       <button class="payment_button">
                         <ion-icon
@@ -493,9 +505,7 @@
                       ></ion-icon>
                       <h1 class="avatar_detail_title">
                         Address -
-                        <span class="avatar_detail_address"
-                          >Glass Walk, NYC</span
-                        >
+                        <span class="avatar_detail_address">Glass NYC</span>
                       </h1>
                       <button class="payment_button">
                         <ion-icon
@@ -512,47 +522,80 @@
                 <section class="service_section">
                   <h1 class="service_header">ACTIVITY</h1>
                 </section>
-                <main class="service_item">
-                  <section class="dot_container">
-                    <div class="highlight_dot"></div>
-                    <h1 class="service_title">Claimed $2000</h1>
-                  </section>
-                  <h1 class="service_description">
-                    23 members are got claimed in washington dc
-                  </h1>
-                  <h1 class="service_description sub_description">5:40 PM</h1>
-                </main>
+                <div>
+                  <hr class="gray_vertical_line" />
+                  <main class="service_item">
+                    <section class="dot_container">
+                      <div class="highlight_dot"></div>
+                      <h1 class="service_title">Claimed $2000</h1>
+                    </section>
+                    <h1 class="service_description">
+                      23 members are got claimed in washington dc.
+                    </h1>
+                    <h1 class="service_description sub_description">5:40 PM</h1>
+                  </main>
+                  <main class="service_item">
+                    <section class="dot_container">
+                      <div class="highlight_dot accent_dot"></div>
+                      <h1 class="service_title">102 New Members</h1>
+                    </section>
+                    <h1 class="service_description">
+                      We have 102 registrations check out their profiles.
+                    </h1>
+                    <h1 class="service_description sub_description">5:40 PM</h1>
+                  </main>
+                  <main class="service_item">
+                    <section class="dot_container">
+                      <div class="highlight_dot success_dot"></div>
+                      <h1 class="service_title">3 Claims are waiting</h1>
+                    </section>
+                    <h1 class="service_description">
+                      Please contribute to them, they are waiting for your help.
+                    </h1>
+                    <h1 class="service_description sub_description">5:30 PM</h1>
+                  </main>
+                  <main class="service_item">
+                    <section class="dot_container">
+                      <div class="highlight_dot"></div>
+                      <h1 class="service_title">102 New Members</h1>
+                    </section>
+                    <h1 class="service_description">
+                      We have 102 registrations check out their profiles.
+                    </h1>
+                    <h1 class="service_description sub_description">5:40 PM</h1>
+                  </main>
 
-                <main class="service_item">
-                  <section class="dot_container">
-                    <div class="highlight_dot accent_dot"></div>
-                    <h1 class="service_title">102 New Members</h1>
-                  </section>
-                  <h1 class="service_description">
-                    We have 102 registrations check out their profiles.
-                  </h1>
-                  <h1 class="service_description sub_description">5:40 PM</h1>
-                </main>
-                <main class="service_item">
-                  <section class="dot_container">
-                    <div class="highlight_dot success_dot"></div>
-                    <h1 class="service_title">3 Claims are waiting</h1>
-                  </section>
-                  <h1 class="service_description">
-                    Please contribute to them, they are waiting for your help.
-                  </h1>
-                  <h1 class="service_description sub_description">5:30 PM</h1>
-                </main>
-                <main class="service_item">
-                  <section class="dot_container">
-                    <div class="highlight_dot"></div>
-                    <h1 class="service_title">102 New Members</h1>
-                  </section>
-                  <h1 class="service_description">
-                    We have 102 registrations check out their profiles.
-                  </h1>
-                  <h1 class="service_description sub_description">5:40 PM</h1>
-                </main>
+                  <main class="service_item">
+                    <section class="dot_container">
+                      <div class="highlight_dot accent_dot"></div>
+                      <h1 class="service_title">102 New Members</h1>
+                    </section>
+                    <h1 class="service_description">
+                      We have 102 registrations check out their profiles.
+                    </h1>
+                    <h1 class="service_description sub_description">5:40 PM</h1>
+                  </main>
+                  <main class="service_item">
+                    <section class="dot_container">
+                      <div class="highlight_dot accent_dot"></div>
+                      <h1 class="service_title">102 New Members</h1>
+                    </section>
+                    <h1 class="service_description">
+                      We have 102 registrations check out their profiles.
+                    </h1>
+                    <h1 class="service_description sub_description">5:40 PM</h1>
+                  </main>
+                  <main class="service_item">
+                    <section class="dot_container">
+                      <div class="highlight_dot"></div>
+                      <h1 class="service_title">Claimed $2000</h1>
+                    </section>
+                    <h1 class="service_description">
+                      23 members are got claimed in washington dc.
+                    </h1>
+                    <h1 class="service_description sub_description">5:40 PM</h1>
+                  </main>
+                </div>
               </div>
             </section>
           </div>
